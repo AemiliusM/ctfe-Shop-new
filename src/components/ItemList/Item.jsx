@@ -18,8 +18,8 @@ function Item({ item, onChange, onDelete }) {
         />
 
         <button
-          type='button'
-          className='button'
+          type="button"
+          className="button"
           onClick={() => setIsFlux(false)}
         >
           Save
@@ -33,8 +33,8 @@ function Item({ item, onChange, onDelete }) {
           {item.text}
         </p>
         <button
-          type='button'
-          className='edit-button'
+          type="button"
+          className="edit-button"
           onClick={() => setIsFlux(true)}
         >
           Edit
@@ -44,8 +44,9 @@ function Item({ item, onChange, onDelete }) {
   }
   return (
     <div>
+      Done?
       <input
-        type='checkbox'
+        type="checkbox"
         checked={item.finished}
         onChange={(e) => {
           onChange({
@@ -56,9 +57,9 @@ function Item({ item, onChange, onDelete }) {
       />
       {itemContent}
       <button
-        type='button'
-        className='delete-button'
-        aria-label='delete-button'
+        type="button"
+        className="delete-button"
+        aria-label="delete-button"
         onClick={() => onDelete(item.id)}
       >
         Delete
